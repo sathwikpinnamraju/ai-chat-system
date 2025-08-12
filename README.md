@@ -21,7 +21,7 @@ It provides:
 
 ---
 
-## 🛠 Installation Instructions
+##  Installation Instructions
 
 ### 1️⃣ Clone the repository
 
