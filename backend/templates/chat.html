@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+</head>
+<body>
+<div class="chat-container">
+    <header>
+        <h2>AI Chat Assistant</h2>
+        <div class="header-actions">
+            <span id="token-count">Tokens: ...</span>
+            <button onclick="clearHistory()">Clear</button>
+            <button onclick="logoutUser()">Logout</button>
+        </div>
+    </header>
+
+    <div class="chat-box" id="chat-box">
+        <div class="message bot">Hello! I’m your AI assistant. How can I help you today?</div>
+    </div>
+
+    <div class="input-box">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-btn">Send</button>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="{% static 'js/chat.js' %}"></script>
+</body>
+</html>

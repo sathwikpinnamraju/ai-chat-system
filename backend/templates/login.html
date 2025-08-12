@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login to AI Chat System</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<div class="login-container">
+    <h2>Login to AI Chat System</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <!--  Status message -->
+    <p id="status" style="color:red; font-size:14px; min-height:18px;"></p>
+
+    <button type="button" onclick="loginUser()">Login</button>
+
+    <p class="register-text">
+        Don't have an account? <a href="/register/">Create one</a>
+    </p>
+</div>
+
+<script src="{% static 'js/login.js' %}"></script>
+</body>
+</html>
